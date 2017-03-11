@@ -32,14 +32,8 @@ module.exports.getMethods = function (app) {
 
 
 
-    //testing purpose
-    var obj={
-
-    };
-    app.post('/android', function (req, res) {
+    app.post('/mobile/logi', function (req, res) {
         utills.logger("successfully accessed " + req.url, 200);
-        //res.sendFile(path.join(__dirname, '../../views', 'index.html'));
-        //res.status(200);
         console.log(req.body);
         console.log(req.params.username);
         res.status(200).send({

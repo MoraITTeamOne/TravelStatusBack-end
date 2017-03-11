@@ -2,11 +2,94 @@
  * Created by Chanaka Fernando on 1/16/2017.
  */
 var utills = require('../../utills');
-var collectionModel = require('../../dataModels/collectionModels');
+var collectionModels = require('../../dataModels/collectionModels');
 
 
 module.exports.postMethods = function (app) {
     utills.logger(__dirname + "\\getRequest.js", 200);
+
+
+    /**
+     *this method is used to Authanication
+     */
+    app.post('/user/register', function (req, res) {
+        utills.logger('sucessfully accessed ' + req.url, 200);
+        utills.DBConnection();
+
+        var loginStatus =null;
+        var selection ={
+            _id: req.body.userName
+        };
+        var Projection = {
+            _id :false,
+            __v: false
+
+
+        };
+        collectionModels.Users.find(selection, Projection, function (err, user) {
+            if (err) {
+                utills.logger("error occured :", 500, err);
+                //utills.sendResponce(500,res,err);
+            } else {
+                if(user.length == 0){
+                    loginStatus=0;
+                    res.statusCode(200).send({status:loginStatus,})
+                }else{
+                    loginStatus =1;
+
+
+
+
+
+
+                }
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var newUser = collectionModel.Users ({
+            name        :{
+                fname:req.body.firstName,
+                lname:req.body.lastName
+            },
+            email       :req.body.eMail,
+            telno       :req.body.telnumber,
+            rank        :req.body.rank,
+            point       :req.body.points,
+            username    :req.body.userName,
+            regDate     :new Date()
+
+        });
+        newUser.save(function (err) {
+            if (err) {
+                utills.logger("Document is not saved", 500, err);
+            } else {
+                utills.logger('Document is saved successfully', 200);
+            }
+        });
+        res.end();
+
+    });
+
+
+
+
+
+
+
+
+
 
 
     /**
@@ -95,35 +178,6 @@ module.exports.postMethods = function (app) {
     });
 
 
-    /**
-     *this method will save the user details came from admin, into database
-     */
-    app.post('/post/User', function (req, res) {
-        utills.logger('sucessfully accessed ' + req.url, 200);
-        utills.DBConnection();
-        var newUser = collectionModel.Users ({
-            name        :{
-                fname:req.body.firstName,
-                lname:req.body.lastName
-            },
-            email       :req.body.eMail,
-            telno       :req.body.telnumber,
-            rank        :req.body.rank,
-            point       :req.body.points,
-            username    :req.body.userName,
-            regDate     :req.body.regDate
-
-        });
-        newUser.save(function (err) {
-            if (err) {
-                utills.logger("Document is not saved", 500, err);
-            } else {
-                utills.logger('Document is saved successfully', 200);
-            }
-        });
-        res.end();
-
-    });
 
 
     /**
