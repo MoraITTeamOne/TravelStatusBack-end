@@ -18,62 +18,50 @@ module.exports.postMethods = function (app) {
     utills.logger(__dirname + "\\postRequest.js", 200);
 
     /**
-     * send a specific bus data by given drver NTC
+     * Send New Bus data to the BusAPI
      */
     app.post('/post/bus', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
-
-
-        var postData = req.body;
-        console.log(req.body);
-
-        var url = '127.0.0.1:3000/post/bus';
-        var options = {
-            method: 'post',
-            body: postData,
-            json: true,
-            url: url
-        };
-        request(options, function (err, res, body) {
-            if (err) {
-                console.error('error posting json: ', err)
-                throw err
+        console.log(req.body +" to be sent to the API");
+        request({
+            url:config.BUS_SERVICE+'/post/bus',
+            qs: {from:'Travel Status Back-End', time: +new Date()},
+            method: 'POST',
+            json: req.body
+        }, function(err, response, body){
+            if(err) {
+                utills.logger("error occured ",500,err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('success POST service call to BUSAPI',200,err);
+                utills.sendResponce(200,res,err,response);
             }
-            var headers = res.headers;
-            var statusCode = res.statusCode;
-            console.log('headers: ', headers);
-            console.log('statusCode: ', statusCode);
-            console.log('body: ', body);
         });
-
     });
 
 
 
 
-
-
-
-
-
-
-
-
-
     /**
-     * send a specific driver data by given drver NTC
+     * send a  driver data to BUSApi
      */
-    app.post('/post/driver', function (req, res) {
+    app.post('/post/bus/driver', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
-        request.post(config.BUS_SERVICE + '/post/driver', function (err, response, body) {
-            if (!err && response.statusCode == 200) {
-                var obj = JSON.parse(body);
-                obj = obj.content;
-                utills.sendResponce(200, res, err, obj);
+        console.log(req.body +" to be sent to the API");
+        request({
+            url:config.BUS_SERVICE+'/post/driver',
+            qs: {from:'Travel Status Back-End', time: +new Date()},
+            method: 'POST',
+            json: req.body
+        }, function(err, response, body){
+            if(err) {
+                utills.logger("error occured ",500,err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('success POST service call to BUSAPI',200,err);
+                utills.sendResponce(200,res,err,response);
             }
-        })
-
-
+        });
     });
 
 
@@ -82,15 +70,23 @@ module.exports.postMethods = function (app) {
     /**
      * send a specific conductor data by given conductor NTC
      */
-    app.post('/post/conductor', function (req, res) {
+    app.post('/post/bus/conductor', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
-        request(config.BUS_SERVICE + '/post/conductor/', function (err, response, body) {
-            if (!err && response.statusCode == 200) {
-                var obj = JSON.parse(body);
-                obj = obj.content;
-                utills.sendResponce(200, res, err, obj);
+        console.log(req.body +" to be sent to the API");
+        request({
+            url:config.BUS_SERVICE+'/post/conductor',
+            qs: {from:'Travel Status Back-End', time: +new Date()},
+            method: 'POST',
+            json: req.body
+        }, function(err, response, body){
+            if(err) {
+                utills.logger("error occured ",500,err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('success POST service call to BUSAPI',200,err);
+                utills.sendResponce(200,res,err,response);
             }
-        })
+        });
 
 
     });
@@ -99,15 +95,23 @@ module.exports.postMethods = function (app) {
     /**
      * send a specific schedule data
      */
-    app.post('/post/schedule', function (req, res) {
+    app.post('/post/bus/schedule', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
-        request(config.BUS_SERVICE + '/post/schedule/', function (err, response, body) {
-            if (!err && response.statusCode == 200) {
-                var obj = JSON.parse(body);
-                obj = obj.content;
-                utills.sendResponce(200, res, err, obj);
+        console.log(req.body +" to be sent to the API");
+        request({
+            url:config.BUS_SERVICE+'/post/schedule',
+            qs: {from:'Travel Status Back-End', time: +new Date()},
+            method: 'POST',
+            json: req.body
+        }, function(err, response, body){
+            if(err) {
+                utills.logger("error occured ",500,err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('success POST service call to BUSAPI',200,err);
+                utills.sendResponce(200,res,err,response);
             }
-        })
+        });
 
 
     });
@@ -119,13 +123,21 @@ module.exports.postMethods = function (app) {
      */
     app.post('/post/route', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
-        request(config.BUS_SERVICE + '/post/route/', function (err, response, body) {
-            if (!err && response.statusCode == 200) {
-                var obj = JSON.parse(body);
-                obj = obj.content;
-                utills.sendResponce(200, res, err, obj);
+        console.log(req.body +" to be sent to the API");
+        request({
+            url:config.BUS_SERVICE+'/post/route',
+            qs: {from:'Travel Status Back-End', time: +new Date()},
+            method: 'POST',
+            json: req.body
+        }, function(err, response, body){
+            if(err) {
+                utills.logger("error occured ",500,err);
+                utills.sendResponce(200,res,err);
+            } else {
+                utills.logger('success POST service call to BUSAPI',200,err);
+                utills.sendResponce(200,res,err,response);
             }
-        })
+        });
 
 
     });
