@@ -22,7 +22,7 @@ var administrator = new Schema({
     telNo          :{type:String,require:true},
     adminType      :{type:String,require:true},
     proPic         :String,
-    regDate        :Date
+    regDate        :String
 });
 var Administrators = mongoose.model('Administrators',administrator);
 exports.Administrator = Administrators;
@@ -33,6 +33,7 @@ exports.Administrator = Administrators;
 
 var sponsor = new Schema({
     comName    :{type:String,require:true,unique:true},
+    password   :{type:String,require:true},
     postalCode :{type:String,require:true},
     email      :{type:String,unique:true},
     mobileNo   :{type:String,require:true},
@@ -40,7 +41,7 @@ var sponsor = new Schema({
     fixdLine   :{type:String,require:true},
     address    :{type:String,require:true},
     proPic     :String,
-    regDate    :Date,
+    regDate    :String,
     points     :Number
 
 });
@@ -79,7 +80,7 @@ var user = new Schema({
     userName    :{type:String,require:true,unique:true},
     password    :{type:String,require:true},
     proPic      :String,
-    regDate     :Date
+    regDate     :String
 });
 var Users = mongoose.model('Users',user);
 exports.Users = Users;

@@ -330,8 +330,5 @@ module.exports.getMethods = function (app) {
             utills.sendResponce(200,res,err,object);
         });
 
-
     });
-
-
 };

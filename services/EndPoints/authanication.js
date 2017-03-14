@@ -23,7 +23,7 @@ module.exports.Authnication =function (app) {
             console.log(data.length);
             if (err) {
                 utills.logger("error occured when logging"+req.body.userName, 500, err);
-                res.status(500).send({status:500,Message:"Error"});
+                res.status(500).send({status:500,Message:err.message});
             } else if(data.length ==0){
                 utills.logger("does not exist the user "+req.body.userName, 404, err);
                 res.status(404).send({status:400,Message:"User Name Not found"});
@@ -51,7 +51,7 @@ module.exports.Authnication =function (app) {
             console.log("number of users"+data.length);
             if (err) {
                 utills.logger("Internal error occured when logging"+req.body.userName, 500, err);
-                res.status(500).send({status:500,Message:"Internal Error"});
+                res.status(500).send({status:500,Message:err.message});
             } else if(data.length == 0){
                 var date = new Date().toLocaleString();
                 utills.logger("does not exist the user "+req.body.userName , 200, err);
@@ -73,7 +73,7 @@ module.exports.Authnication =function (app) {
                 newUser.save(function (err){
                     if (err) {
                         utills.logger("Document is not saved", 500, err);
-                        res.status(500).send({status:500,Message:"Internal Error"});
+                        res.status(500).send({status:500,Message:err.message});
                     } else {
                         utills.logger(req.body.userName+' is saved successfully', 200);
                         res.status(200).send({status:200,Message:"success"});
@@ -95,19 +95,19 @@ module.exports.Authnication =function (app) {
      */
     app.post('/login/sponsor',function (req,res) {
         utills.logger("Authanication mode access",200);
-        var selction={
-            userName:req.body.comName,
+        var selection={
+            comName:req.body.comName,
             password:req.body.password
         };
 
         utills.DBConnection();
-        collectionModels.Sponsors.find(selction,function (err,data) {
+        collectionModels.Sponsors.find(selection,function (err,data) {
             console.log(data.length);
             if (err) {
                 utills.logger("error occured when logging"+req.body.comName, 500, err);
-                res.status(500).send({status:500,Message:"Error"});
-            } else if(data.length ==0){
-                utills.logger("does not exist the user "+req.body.comName, 404, err);
+                res.status(500).send({status:500,Message:err.message});
+            } else if(data.length == 0){
+                utills.logger("does not exist the sponser "+req.body.comName, 404, err);
                 res.status(400).send({status:400,Message:"Bad Request"});
             }else if(data.length == 1){
                 utills.logger("exist the sponsor "+req.body.comName, 200, err);
@@ -126,22 +126,23 @@ module.exports.Authnication =function (app) {
      */
     app.post('/reg/sponsor',function (req,res) {
         utills.logger("Authanication mode access for Registration",200);
-        var selction={
-            userName:req.body.comName
+        var selection={
+            comName:req.body.comName
         };
         console.log(req.body.comName);
         utills.DBConnection();
-        collectionModels.Sponsors.find(selction,{},{},function (err,data) {
+        collectionModels.Sponsors.find(selection,{},{},function (err,data) {
             console.log("number of users"+data.length);
             if (err) {
                 utills.logger("Internal error occured when logging"+req.body.userName, 500, err);
-                res.status(500).send({status:500,Message:"Internal Server Error"});
+                res.status(500).send({status:500,Message:err.message});
             } else if(data.length == 0){
-                var date = new Date().toLocaleString();
+                var date =new Date().toLocaleString();
+                console.log(date);
                 utills.logger("does not exist the sponsor "+req.body.comName, 200, err);
                 var newSponsor = collectionModels.Sponsors ({
                     comName    :req.body.comName,
-                    password   :req.body.password,
+                    password :req.body.password,
                     postalCode :req.body.postalCode,
                     email      :req.body.email,
                     mobileNo   :req.body.mobileNumber,
@@ -153,10 +154,11 @@ module.exports.Authnication =function (app) {
                     points     :0
 
                 });
+                console.log(newSponsor);
                 newSponsor.save(function (err){
                     if (err) {
                         utills.logger("Document is not saved", 400, err);
-                        res.status(400).send({status:400,Message:"Company already exists"});
+                        res.status(400).send({status:400,Message:err.message});
                     } else {
                         utills.logger(req.body.comName+' is saved successfully', 200);
                         res.status(200).send({status:200,Message:"success"});
@@ -188,7 +190,7 @@ module.exports.Authnication =function (app) {
             console.log(data.length);
             if (err) {
                 utills.logger("error occured when logging"+req.body.comName, 500, err);
-                res.status(500).send({status:500,Message:"Error"});
+                res.status(500).send({status:500,Message:err.message});
             } else if(data.length ==0){
                 utills.logger("does not exist the dministrator "+req.body.comName, 404, err);
                 res.status(400).send({status:400,Message:"Bad Request"});
@@ -218,7 +220,7 @@ module.exports.Authnication =function (app) {
             console.log("number of users"+data.length);
             if (err) {
                 utills.logger("Internal error occured when logging"+req.body.userName, 500, err);
-                res.status(500).send({status:500,Message:"Internal Error"});
+                res.status(500).send({status:500,Message:err.message});
             } else if(data.length == 0){
                 utills.logger("does not exist the user "+req.body.userName, 200, err);
                 var date = new Date().toLocaleString();
@@ -238,7 +240,7 @@ module.exports.Authnication =function (app) {
                 newAdmin.save(function (err){
                     if (err) {
                         utills.logger("Document is not saved", 500, err);
-                        res.status(500).send({status:500,Message:"Internal Error"});
+                        res.status(500).send({status:500,Message:err.message});
                     } else {
                         utills.logger(req.body.userName+' is saved successfully', 200);
                         res.status(200).send({status:200,Message:"success"});
