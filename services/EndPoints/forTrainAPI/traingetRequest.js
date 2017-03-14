@@ -1,7 +1,7 @@
 /**
  * Created by Gayan Sampath on 3/9/2017.
  */
-var utills = require('../../utills');
+var utills = require('../../../utills');
 var request = require('request');
 var collectionModels = require('../../dataModels/collectionModels');
 var config = require('../../app-config.json');

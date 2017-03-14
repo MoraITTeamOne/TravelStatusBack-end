@@ -1,8 +1,8 @@
 /**
  * Created by Chanaka Fernando on 1/16/2017.
  */
-var utills = require('../../utills');
-var collectionModels = require('../../dataModels/collectionModels');
+var utills = require('../../../utills');
+var collectionModels = require('../../../dataModels/collectionModels');
 
 
 module.exports.postMethods = function (app) {
@@ -78,7 +78,7 @@ module.exports.postMethods = function (app) {
                 utills.logger('Document is saved successfully', 200);
             }
         });
-        res.end();
+
 
     });
 

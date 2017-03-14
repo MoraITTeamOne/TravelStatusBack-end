@@ -64,16 +64,16 @@ exports.Adverteistments = Adverteistments;
 
 var user = new Schema({
     name        :{
-        fname:{type:String,require:true},
-        lname:{type:String,require:true}
+        fName:{type:String,require:true},
+        lName:{type:String,require:true}
     },
     email       :{type:String,unique:true},
-    telno       :Number,
+    telNo       :Number,
     rank        :Number,
-    rewardpoint :Number,
-    username    :{type:String,require:true,unique:true},
+    rewardsPoint :Number,
+    userName    :{type:String,require:true,unique:true},
     password    :{type:String,require:true},
-    regdate     :Date
+    regDate     :Date
 });
 var Users = mongoose.model('Users',user);
 exports.Users = Users;

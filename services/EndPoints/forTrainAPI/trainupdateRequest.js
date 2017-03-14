@@ -3,7 +3,7 @@
  */
 
 
-var utills = require('../../utills');
+var utills = require('../../../utills');
 var path = require('path');
 var request = require('request');
 var collectionModels = require('../../dataModels/collectionModels');

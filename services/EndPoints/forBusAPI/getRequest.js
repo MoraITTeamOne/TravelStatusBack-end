@@ -2,11 +2,11 @@
  * Created by Chanaka Fernando on 3/2/2017.
  * @email nuwan.c.fernando@gmail.com
  */
-var utills = require('../../utills');
+var utills = require('../../../utills');
 var path = require('path');
 var request = require('request');
-var collectionModels = require('../../dataModels/collectionModels');
-var config = require('../../app-config.json');
+var collectionModels = require('../../../dataModels/collectionModels');
+var config = require('../../../app-config.json');
 
 
 /**

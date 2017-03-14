@@ -5,12 +5,12 @@
 
 var utills = require('../utills');
 
-var backEndGetRequests  = require('./EndPoints/getRequests');
-var backEndPostRequests = require('./EndPoints/postRequests');
-var backEndUpdateRequests = require('./EndPoints/updateRequests');
+var backEndGetRequests  = require('./EndPoints/backEnd/getRequests');
+var backEndPostRequests = require('./EndPoints/backEnd/postRequests');
+var backEndUpdateRequests = require('./EndPoints/backEnd/updateRequests');
 
-var busAPIGetRequest = require('./forBusAPI/getRequest');
-var busAPIPostRequest = require('./forBusAPI/postRequest');
+var busAPIGetRequest = require('./EndPoints/forBusAPI/getRequest');
+var busAPIPostRequest = require('./EndPoints/forBusAPI/postRequest');
 
 
 

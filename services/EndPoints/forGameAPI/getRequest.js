@@ -3,9 +3,9 @@
  * @email : nuwan.c.fernando@gmail.com
  */
 
-var utills = require('../../utills');
-var config = require('../../app-config.json');
-var collectionModels = require('../../dataModels/collectionModels');
+var utills = require('../../../utills');
+var config = require('../../../app-config.json');
+var collectionModels = require('../../../dataModels/collectionModels');
 
 
 /***

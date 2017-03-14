@@ -3,6 +3,6 @@
   "DB_PORT":27017,
   "DB_HOST":"localhost",
   "DB_NAME":"BackendMainDB",
-  "BUS_SERVICE" : "http://127.0.0.1:3000",
+  "BUS_SERVICE" : "http://35.163.240.118:8000",
   "TRAIN_SERVICE":"http://127.0.0.1:4000"
 }

@@ -3,10 +3,10 @@
  * @email nuwan.c.fernando@gmail.com
  */
 
-var utills = require('../../utills');
+var utills = require('../../../utills');
 var path = require('path');
-var collectionModels = require('../../dataModels/collectionModels');
-var config = require('../../app-config.json');
+var collectionModels = require('../../../dataModels/collectionModels');
+var config = require('../../../app-config.json');
 var request = require('request');
 //topcompa 8
 //top diver 5
