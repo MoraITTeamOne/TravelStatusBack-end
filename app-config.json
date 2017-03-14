@@ -1,0 +1,9 @@
+{
+  "SERVER_PORT": 8000,
+  "DB_HOST": "52.34.134.62",
+  "DB_PORT":  27017,
+  "DB_NAME": "BackendMainDB",
+  "BUS_SERVICE":"http://35.163.240.118:8000",
+  "TRAIN_SERVICE":"http://52.89.222.123:8000"
+
+}
