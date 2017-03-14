@@ -20,7 +20,9 @@ var administrator = new Schema({
     userName       :{type:String,require:true,unique:true},
     adminPass      :{type:String,require:true},
     telNo          :{type:String,require:true},
-    adminType      :{type:String,require:true}
+    adminType      :{type:String,require:true},
+    proPic         :String,
+    regDate        :Date
 });
 var Administrators = mongoose.model('Administrators',administrator);
 exports.Administrator = Administrators;
@@ -31,13 +33,16 @@ exports.Administrator = Administrators;
 
 var sponsor = new Schema({
     comName    :{type:String,require:true,unique:true},
-    name       :{
-        fName  :{type:String,require:true},
-        lName  :{type:String,require:true}
-    },
-    eMail      :{type:String,unique:true},
-    telNo      :{type:String,require:true},
-    points      :Number
+    postalCode :{type:String,require:true},
+    email      :{type:String,unique:true},
+    mobileNo   :{type:String,require:true},
+    faxNum     :{type:String,require:true},
+    fixdLine   :{type:String,require:true},
+    address    :{type:String,require:true},
+    proPic     :String,
+    regDate    :Date,
+    points     :Number
+
 });
 var Sponsors = mongoose.model('Sponsors',sponsor);
 exports.Sponsors = Sponsors;
@@ -73,6 +78,7 @@ var user = new Schema({
     rewardsPoint :Number,
     userName    :{type:String,require:true,unique:true},
     password    :{type:String,require:true},
+    proPic      :String,
     regDate     :Date
 });
 var Users = mongoose.model('Users',user);

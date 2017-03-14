@@ -8,8 +8,7 @@ var path = require('path');
 var collectionModels = require('../../../dataModels/collectionModels');
 var config = require('../../../app-config.json');
 var request = require('request');
-//topcompa 8
-//top diver 5
+
 
 
 
@@ -333,12 +332,6 @@ module.exports.getMethods = function (app) {
 
 
     });
-
-
-
-
-
-
 
 
 };

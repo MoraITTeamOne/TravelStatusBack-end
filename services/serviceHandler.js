@@ -13,6 +13,9 @@ var busAPIGetRequest = require('./EndPoints/forBusAPI/getRequest');
 var busAPIPostRequest = require('./EndPoints/forBusAPI/postRequest');
 
 
+var authanication = require('./EndPoints/authanication');
+
+
 
 module.exports.services = function(app){
     utills.logger('Ready to exicute backend services',200);
@@ -26,6 +29,9 @@ module.exports.services = function(app){
     //forBusAPI
     busAPIGetRequest.getMethods(app);
     busAPIPostRequest.postMethods(app);
+
+
+    authanication.Authnication(app);
 
 
 
