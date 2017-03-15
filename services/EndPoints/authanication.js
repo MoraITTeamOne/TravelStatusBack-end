@@ -26,7 +26,7 @@ module.exports.Authnication =function (app) {
                 res.status(400).send({status:500,Message:err.message});
             } else if(data.length ==0){
                 utills.logger("does not exist the user "+req.body.userName, 404, err);
-                res.status(200).send({status:400,Message:"User Name Not found"});
+                res.status(200).send({status:400,Message:"Not Found"});
             }else if(data.length == 1){
                 utills.logger("exist the user "+req.body.userName, 200, err);
                 res.status(200).send({status:200,Message:"success"});
