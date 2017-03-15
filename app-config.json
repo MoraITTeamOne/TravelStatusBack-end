@@ -5,5 +5,4 @@
   "DB_NAME": "BackendMainDB",
   "BUS_SERVICE":"http://35.163.240.118:8000",
   "TRAIN_SERVICE":"http://52.89.222.123:8000"
-
 }

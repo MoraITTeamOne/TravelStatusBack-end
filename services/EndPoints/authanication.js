@@ -26,13 +26,13 @@ module.exports.Authnication =function (app) {
                 res.status(500).send({status:500,Message:err.message});
             } else if(data.length ==0){
                 utills.logger("does not exist the user "+req.body.userName, 404, err);
-                res.status(404).send({status:400,Message:"User Name Not found"});
+                res.status(400).send({status:400,Message:"User Name Not found"});
             }else if(data.length == 1){
                 utills.logger("exist the user "+req.body.userName, 200, err);
                 res.status(200).send({status:200,Message:"success"});
             }else {
                 utills.logger("Some error occure  "+req.body.userName, 304, err);
-                res.status(304).send({status:500,Message:"Internal error"});
+                res.status(400).send({status:500,Message:"Internal error"});
             }
         })
 
