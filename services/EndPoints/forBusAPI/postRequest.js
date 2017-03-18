@@ -121,7 +121,7 @@ module.exports.postMethods = function (app) {
     /**
      * send a specific route data
      */
-    app.post('/post/route', function (req, res) {
+    app.post('/post/bus/route', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
         console.log(req.body +" to be sent to the API");
         request({
