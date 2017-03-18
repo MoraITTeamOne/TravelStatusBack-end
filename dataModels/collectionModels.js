@@ -53,13 +53,14 @@ exports.Sponsors = Sponsors;
 
 
 var adverteistment = new Schema({
-    addName   :{type:String,require:true,unique:true},
     comName   :{type:String,require:true},
-    addedDate :{type:Date,require:true},
-    dueDate   :{type:Date,require:true},
-    exDate    :{type:Date,require:true},
-    image     :{type:String,require:true},
-    valid     :Boolean // set default value false
+    addedDate :{type:String,require:true},
+    exDate    :{type:String,require:true},
+    valid     :Boolean ,
+    eMail     :{type:String,require:true},
+    telNo     :String,
+    img       :{type:String,require:true},
+    text      :String
 
 });
 var Adverteistments = mongoose.model('Adverteistments',adverteistment);
