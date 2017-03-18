@@ -18,14 +18,16 @@ module.exports.postMethods = function (app) {
     app.post('/post/Adverteistment', function (req, res) {
         utills.logger('sucessfully accessed ' + req.url, 200);
         utills.DBConnection();
-        var newAdverteistment = collectionModel.Adverteistments ({
-            comName: req.body.companyName,
-            name: {
-                fName: req.body.firstName,
-                lName: req.body.lastName
-            },
+        var date = new Date().toLocaleString();
+        var newAdverteistment = collectionModels.Adverteistments ({
+            comName: req.body.comName,
             eMail: req.body.eMail,
-            telNo: req.body.telNumber
+            telNo: req.body.telNumber,
+            addedDate: date,
+            exDate : req.body.exDate,
+            img :req.body.img,
+            text:req.body.text,
+            valid :false
 
         });
         newAdverteistment.save(function (err) {
@@ -35,7 +37,6 @@ module.exports.postMethods = function (app) {
                 utills.logger('Document is saved successfully', 200);
             }
         });
-        res.end();
 
     });
 

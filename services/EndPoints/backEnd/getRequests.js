@@ -30,20 +30,6 @@ module.exports.getMethods = function (app) {
     });
 
 
-
-    app.post('/mobile/logi', function (req, res) {
-        utills.logger("successfully accessed " + req.url, 200);
-        console.log(req.body);
-        console.log(req.params.username);
-        res.status(200).send({
-            Name :"Chanaka",
-            Age  :"1222",
-            Mobile: "014444"
-        });
-        utills.logger("successfully send the index.html file", 200);
-    });
-
-
     /**
      * this method will return an addverteistment detaill by its Id
      */
