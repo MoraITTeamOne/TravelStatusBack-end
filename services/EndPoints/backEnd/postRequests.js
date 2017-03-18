@@ -49,7 +49,7 @@ module.exports.postMethods = function (app) {
     app.post('/post/comment', function (req, res) {
         utills.logger('sucessfully accessed ' + req.url, 200);
         utills.DBConnection();
-        var newComment = collectionModel.Users ({
+        var newComment = collectionModels.Users ({
             userName   :req.body.userName,
             texts      :req.body.message,
             imag       :req.body.photo,
@@ -68,7 +68,6 @@ module.exports.postMethods = function (app) {
                 utills.logger('Document is saved successfully', 200);
             }
         });
-        res.end();
 
     });
 
@@ -80,7 +79,7 @@ module.exports.postMethods = function (app) {
     app.post('/post/comment', function (req, res) {
         utills.logger('sucessfully accessed ' + req.url, 200);
         utills.DBConnection();
-        var newComment = collectionModel.Users ({
+        var newComment = collectionModels.Users ({
             userName   :req.body.userName,
             texts      :req.body.message,
             imag       :req.body.photo,
@@ -99,7 +98,7 @@ module.exports.postMethods = function (app) {
                 utills.logger('Document is saved successfully', 200);
             }
         });
-        res.end();
+
     });
 
 };

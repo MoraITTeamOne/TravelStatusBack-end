@@ -69,7 +69,7 @@ module.exports.getMethods = function (app) {
             __v: false,
             _id: true
         };
-        collectionModels.Sponsor.find(selection, Projection, function (err, SponsorList) {
+        collectionModels.Sponsors.find(selection, Projection, function (err, SponsorList) {
             if (err) {
                 utills.logger("error occured :", 500, err);
                 utills.sendResponce(500,res,err);
@@ -119,7 +119,7 @@ module.exports.getMethods = function (app) {
             __v: false
 
         };
-            collectionModels.Adverteistment.find(selection, Projection, function (err, addList) {
+            collectionModels.Adverteistments.find(selection, Projection, function (err, addList) {
                 if (err) {
                     utills.logger("error occured :", 500, err);
                     utills.sendResponce(500,res,err);
@@ -141,7 +141,7 @@ module.exports.getMethods = function (app) {
             __v: false,
             _id: false
         };
-        collectionModels.Sponsor.find({}, Projection, function (err, SponsorList) {
+        collectionModels.Sponsors.find({}, Projection, function (err, SponsorList) {
             if (err) {
                 utills.logger("error occured :", 500, err);
                 utills.sendResponce(500,res,err);
