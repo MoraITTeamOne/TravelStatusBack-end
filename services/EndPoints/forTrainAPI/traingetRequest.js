@@ -3,8 +3,8 @@
  */
 var utills = require('../../../utills');
 var request = require('request');
-var collectionModels = require('../../dataModels/collectionModels');
-var config = require('../../app-config.json');
+var collectionModels = require('../../../dataModels/collectionModels');
+var config = require('../../../app-config.json');
 
 
 /**
@@ -52,6 +52,24 @@ module.exports.getMethods = function (app) {
 
 
 
+    /**
+     * get posible train list data by given time
+     */
+    app.get('/get/ptrain/:sloc/:eloc/:time', function (req, res) {
+        utills.logger("successfully accessed " + req.url, 200);
+        request(config.TRAIN_SERVICE +"/get/pschedule/"+req.params.sloc+"/"+req.params.eloc+"/"+req.params.time, function (err, response, body) {
+            if (!err && response.statusCode == 200) {
+               // console.log(req.params.);
+                var obj = JSON.parse(body);
+                obj = obj.content;
+                console.log(obj);
+                utills.sendResponce(200, res, err, obj);
+            }
+        })
+
+    });
+
+
 
     /**
      * send all driver data ,listed in the database
@@ -97,11 +115,11 @@ module.exports.getMethods = function (app) {
     /**
      * this method will return scheduled train after the requested time
      */
-    app.get('/get/future-schedule/:startLocation/:endLocation/:sTime', function (req, res) {
+    app.get('/get/fschedule/:startLocation/:endLocation/:sTime', function (req, res) {
         var sLocation = req.params.startLocation;
         var eLocation = req.params.endLocation;
         var sTime = parseInt(req.params.sTime);
-        request(config.TRAIN_SERVICE + '/get/future-schedule/' + sLocation + '/' + eLocation + '/' + sTime, function (err, response, body) {
+        request(config.TRAIN_SERVICE + '/get/fschedule/' + sLocation + '/' + eLocation + '/' + sTime, function (err, response, body) {
             if (!err && response.statusCode == 200) {
                 var obj = JSON.parse(body);
                 obj = obj.content;

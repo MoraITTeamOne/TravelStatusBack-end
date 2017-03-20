@@ -13,7 +13,11 @@ var busAPIGetRequest = require('./EndPoints/forBusAPI/getRequest');
 var busAPIPostRequest = require('./EndPoints/forBusAPI/postRequest');
 
 
+var trainAPIGetRequest=require('./EndPoints/forTrainAPI/traingetRequest');
+
+
 var authanication = require('./EndPoints/authanication');
+var locationManager =require('./EndPoints/backEnd/commetOrganizer');
 
 
 
@@ -31,7 +35,12 @@ module.exports.services = function(app){
     busAPIPostRequest.postMethods(app);
 
 
+    // for Train ApI
+    trainAPIGetRequest.getMethods(app);
+
+
     authanication.Authnication(app);
+    locationManager.locationManager(app);
 
 
 
