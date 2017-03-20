@@ -195,16 +195,16 @@ module.exports.Authnication =function (app) {
         collectionModels.Administrator.find(selction,function (err,data) {
             console.log(data.length);
             if (err) {
-                utills.logger("error occured when logging"+req.body.comName, 500, err);
+                utills.logger("error occured when logging"+req.body.userName, 500, err);
                 res.status(500).send({status:500,Message:err.message});
             } else if(data.length ==0){
-                utills.logger("does not exist the dministrator "+req.body.comName, 404, err);
+                utills.logger("does not exist the dministrator "+req.body.userName, 404, err);
                 res.status(400).send({status:400,Message:"Bad Request"});
             }else if(data.length == 1){
-                utills.logger("exist the admin "+req.body.comName, 200, err);
+                utills.logger("exist the admin "+req.body.userName, 200, err);
                 res.status(200).send({status:200,Message:"success"});
             }else {
-                utills.logger("Some error occure  "+req.body.comName, 304, err);
+                utills.logger("Some error occure  "+req.body.userName, 304, err);
                 res.status(304).send({status:500,Message:"Internal error"});
             }
         })
