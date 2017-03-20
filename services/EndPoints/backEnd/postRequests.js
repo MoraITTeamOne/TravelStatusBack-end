@@ -3,6 +3,7 @@
  */
 var utills = require('../../../utills');
 var collectionModels = require('../../../dataModels/collectionModels');
+var config =require('../../../app-config.json');
 
 
 module.exports.postMethods = function (app) {
@@ -47,7 +48,7 @@ module.exports.postMethods = function (app) {
     app.post('/post/comment', function (req, res) {
         utills.logger('sucessfully accessed ' + req.url, 200);
         utills.DBConnection();
-        var newComment = collectionModels.Users ({
+        var newComment = collectionModels.Comments ({
             userName   :req.body.userName,
             texts      :req.body.message,
             imag       :req.body.photo,
@@ -64,6 +65,37 @@ module.exports.postMethods = function (app) {
                 utills.logger("Document is not saved", 500, err);
             } else {
                 utills.logger('Document is saved successfully', 200);
+            }
+        });
+
+    });
+
+    /**
+     *this method will save the user's ranking came from mobile, into database
+     */
+    app.post('/post/ranking', function (req, res) {
+
+        utills.logger('sucessfully accessed ' + req.url, 200);
+        utills.DBConnection();
+
+        var newRank = collectionModels.Ranking ({
+            userName   :req.body.userName,
+            time       :req.body.time,
+            longitude  :req.body.longitude,
+            latitude   :req.body.latitude,
+            transpostType:req.body.type,
+            transportId:req.body.transId,
+            transportName:req.body.tName,
+            rankType :req.body.ranakType,
+            rankValue:req.body.rank,
+            route      :req.body.routeNo
+
+        });
+        newRank.save(function (err) {
+            if (err) {
+                utills.logger("Document is not saved", 500, err);
+            } else {
+                utills.logger(req.body.userName+ ' Document is saved successfully', 200);
             }
         });
 

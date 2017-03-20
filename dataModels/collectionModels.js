@@ -120,5 +120,23 @@ exports.GameProfiles = mongoose.model('GameProfiles',gameProfile);
 
 
 
+var ranking = new Schema({
+    userName   :{type:String,require:true},
+    time       :String,
+    longitude  :Number,
+    latitude   :Number,
+    transpostType:{type:String,require:true},
+    transportId:{type:String,require:true},
+    transportName:String,
+    rankType :String,
+    rankValue:Number,
+    route      :{type:String,require:true}
+
+
+});
+var Ranking = mongoose.model('rankings',ranking);
+exports.Ranking = Ranking;
+
+
 
 
