@@ -236,7 +236,7 @@ module.exports.Authnication =function (app) {
                         fName:req.body.firstName,
                         lName:req.body.lastName
                     },
-                    email       :req.body.email,
+                    eMail       :req.body.email,
                     telNo       :req.body.telNumber,
                     userName    :req.body.userName,
                     adminPass    :req.body.password,
