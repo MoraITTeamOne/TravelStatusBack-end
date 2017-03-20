@@ -12,6 +12,7 @@ module.exports.Authnication =function (app) {
 
 
     app.post('/login/user',function (req,res) {
+        console.log(req.body);
         utills.logger("Authanication mode access",200);
         var selction={
             userName:req.body.userName,
@@ -41,7 +42,9 @@ module.exports.Authnication =function (app) {
 
 
     app.post('/reg/user',function (req,res) {
+        console.log(req.body);
         utills.logger("Authanication mode access for Registration",200);
+        console.log(req.body);
         var selction={
             userName:req.body.userName
         };
@@ -94,6 +97,7 @@ module.exports.Authnication =function (app) {
      * to validate sponsor login
      */
     app.post('/login/sponsor',function (req,res) {
+        console.log(req.body);
         utills.logger("Authanication mode access",200);
         var selection={
             comName:req.body.comName,
@@ -126,6 +130,7 @@ module.exports.Authnication =function (app) {
      */
     app.post('/reg/sponsor',function (req,res) {
         utills.logger("Authanication mode access for Registration",200);
+        console.log(req.body);
         var selection={
             comName:req.body.comName
         };
@@ -179,6 +184,7 @@ module.exports.Authnication =function (app) {
      * to validate admin login
      */
     app.post('/login/admin',function (req,res) {
+        console.log(req.body);
         utills.logger("Authanication mode access",200);
         var selction={
             userName:req.body.userName,
@@ -210,6 +216,7 @@ module.exports.Authnication =function (app) {
      * admin registration
      */
     app.post('/reg/admin',function (req,res) {
+        console.log(req.body);
         utills.logger("Authanication mode access for Registration",200);
         var selction={
             userName:req.body.userName

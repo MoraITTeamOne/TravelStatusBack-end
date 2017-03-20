@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b21c7f52-22c4-4938-8ece-9ba70e17397e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js" afterPath="$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/authanication.js" afterPath="$PROJECT_DIR$/services/EndPoints/authanication.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="traingetRequest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/EndPoints/forTrainAPI/traingetRequest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2980">
-              <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="postRequests.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/backEnd/postRequests.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,18 +37,38 @@
       <file leaf-file-name="postRequest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/forBusAPI/postRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="1000">
+              <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-config.json">
+      <file leaf-file-name="trainpostRequest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/EndPoints/forTrainAPI/trainpostRequest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authanication.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="44" />
+              <caret line="99" column="30" lean-forward="false" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app-config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -79,7 +89,7 @@
       <file leaf-file-name="getRequest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/forBusAPI/getRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
+            <state relative-caret-position="3300">
               <caret line="165" column="10" lean-forward="true" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
               <folding />
             </state>
@@ -89,18 +99,18 @@
       <file leaf-file-name="getRequest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/getRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="140">
               <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getRequests.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getRequests.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="194" column="41" lean-forward="true" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
+            <state relative-caret-position="4000">
+              <caret line="200" column="6" lean-forward="true" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -114,16 +124,6 @@
               <folding>
                 <element signature="e#0#52#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collectionModels.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataModels/collectionModels.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2460">
-              <caret line="123" column="4" lean-forward="false" selection-start-line="123" selection-start-column="4" selection-end-line="132" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -197,7 +197,6 @@
         <option value="$PROJECT_DIR$/services/EndPoints/forGameAPI/getRequest.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/forGameAPI/postRequest.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/forGameAPI/updateRequest.js" />
-        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
         <option value="$PROJECT_DIR$/services/algorithams.js" />
         <option value="$PROJECT_DIR$/dataModels/locationSaver.js" />
         <option value="$PROJECT_DIR$/services/serviceHandler.js" />
@@ -208,6 +207,7 @@
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/commetOrganizer.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/forBusAPI/postRequest.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js" />
+        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
       </list>
     </option>
   </component>
@@ -229,8 +229,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1370" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -247,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,7 +397,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -576,12 +576,13 @@
       <workItem from="1489966831767" duration="1494000" />
       <workItem from="1489995368656" duration="662000" />
       <workItem from="1489998257053" duration="9865000" />
-      <workItem from="1490017536248" duration="1867000" />
+      <workItem from="1490017536248" duration="3420000" />
+      <workItem from="1490036342580" duration="131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420867000" />
+    <option name="totallyTimeSpent" value="422551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,17 +594,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19318181" sideWeight="0.4924078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19266056" sideWeight="0.4924078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27515724" sideWeight="0.28267476" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33023256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16692668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.083333336" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24180967" sideWeight="0.7173252" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08409786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24324325" sideWeight="0.7173252" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -795,26 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/serviceHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/EndPoints/forTrainAPI/trainpostRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2980">
           <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,31 +848,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/forBusAPI/postRequest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="1000">
+          <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/forBusAPI/getRequest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
+        <state relative-caret-position="3300">
           <caret line="165" column="10" lean-forward="true" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/getRequest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="140">
           <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
         </state>
@@ -896,8 +872,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="194" column="41" lean-forward="true" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
+        <state relative-caret-position="4000">
+          <caret line="200" column="6" lean-forward="true" selection-start-line="200" selection-start-column="6" selection-end-line="200" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/EndPoints/forTrainAPI/trainpostRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="99" column="30" lean-forward="false" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
