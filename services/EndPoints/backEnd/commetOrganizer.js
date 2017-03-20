@@ -29,7 +29,7 @@ module.exports.locationManager = function (app) {
                 if (!err && response.statusCode == 200) {
                     var obj = JSON.parse(body);
                     var obja = obj.content;
-                    console.log(obja);
+                    console.log(obj);
                     RouteNo = obja.RouteNo;
                     utills.logger("Succesfully retreved Train route number" + RouteNo, 200);
 
