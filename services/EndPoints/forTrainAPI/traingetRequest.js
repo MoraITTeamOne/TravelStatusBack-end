@@ -130,6 +130,24 @@ module.exports.getMethods = function (app) {
     });
 
 
+    /**
+     * get posible train list
+     */
+    app.get('/get/pschedule/:startLocation/:endLocation/:sTime', function (req, res) {
+        var sLocation = req.params.startLocation;
+        var eLocation = req.params.endLocation;
+        var sTime = parseInt(req.params.sTime);
+        request(config.TRAIN_SERVICE + '/get/fschedule/' + sLocation + '/' + eLocation + '/' + sTime, function (err, response, body) {
+            if (!err && response.statusCode == 200) {
+                var obj = JSON.parse(body);
+                obj = obj.content;
+                utills.sendResponce(200, res, err, obj);
+            }
+        })
+
+    });
+
+
 };
 
 
