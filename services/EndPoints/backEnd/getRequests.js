@@ -88,7 +88,7 @@ module.exports.getMethods = function (app) {
         utills.logger("successfuly accesed " + req.url, 200);
         utills.DBConnection();
         var selection ={
-            comName : req.params.userName
+            userName : req.params.userName
         };
         var Projection = {
             __v: false,
