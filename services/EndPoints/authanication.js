@@ -187,8 +187,8 @@ module.exports.Authnication =function (app) {
         console.log(req.body);
         utills.logger("Authanication mode access",200);
         var selction={
-            userName:req.body.userName,
-            adminPass:req.body.password
+            userName:req.body.userName
+            //adminPass:req.body.password
         };
 
         utills.DBConnection();
