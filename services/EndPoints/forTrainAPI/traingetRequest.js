@@ -137,7 +137,7 @@ module.exports.getMethods = function (app) {
         var sLocation = req.params.startLocation;
         var eLocation = req.params.endLocation;
         var sTime = parseInt(req.params.sTime);
-        request(config.TRAIN_SERVICE + '/get/fschedule/' + sLocation + '/' + eLocation + '/' + sTime, function (err, response, body) {
+        request(config.TRAIN_SERVICE + '/get/pschedule/' + sLocation + '/' + eLocation + '/' + sTime, function (err, response, body) {
             if (!err && response.statusCode == 200) {
                 var obj = JSON.parse(body);
                 obj = obj.content;
