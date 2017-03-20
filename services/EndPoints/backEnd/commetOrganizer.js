@@ -28,8 +28,9 @@ module.exports.locationManager = function (app) {
             request(config.TRAIN_SERVICE + '/get/train/' + trainId, function (err, response, body) {
                 if (!err && response.statusCode == 200) {
                     var obj = JSON.parse(body);
-                    obj = obj.content;
-                    RouteNo = obj.RouteNo;
+                    var obja = obj.content;
+                    console.log(obja);
+                    RouteNo = obja.RouteNo;
                     utills.logger("Succesfully retreved Train route number" + RouteNo, 200);
 
                     if(RouteNo ==='NO001'){
