@@ -6,6 +6,7 @@ var utills = require('../../../utills');
 var collectionModels = require('../../../dataModels/collectionModels');
 var locServer = require('../../../dataModels/locationSaver');
 var config = require('../../../app-config.json');
+var request =require('request');
 
 
 module.exports.locationManager = function (app) {
