@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b21c7f52-22c4-4938-8ece-9ba70e17397e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataModels/collectionModels.js" afterPath="$PROJECT_DIR$/dataModels/collectionModels.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/authanication.js" afterPath="$PROJECT_DIR$/services/EndPoints/authanication.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="authanication.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="241" column="52" lean-forward="true" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
+            <state relative-caret-position="264">
+              <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -576,12 +575,12 @@
       <workItem from="1489995368656" duration="662000" />
       <workItem from="1489998257053" duration="9865000" />
       <workItem from="1490017536248" duration="3420000" />
-      <workItem from="1490036342580" duration="1941000" />
+      <workItem from="1490036342580" duration="2240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424361000" />
+    <option name="totallyTimeSpent" value="424660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -896,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="241" column="52" lean-forward="true" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
+        <state relative-caret-position="264">
+          <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
           <folding />
         </state>
       </provider>

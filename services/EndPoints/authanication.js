@@ -193,7 +193,7 @@ module.exports.Authnication =function (app) {
 
         utills.DBConnection();
         collectionModels.Administrator.find(selction,function (err,data) {
-            console.log(data.length);
+            console.log(data);
             if (err) {
                 utills.logger("error occured when logging"+req.body.userName, 500, err);
                 res.status(500).send({status:500,Message:err.message});
