@@ -66,8 +66,7 @@ module.exports.getMethods = function (app) {
             comName : req.params.comName
         };
         var Projection = {
-            __v: false,
-            _id: true
+            __v: false
         };
         collectionModels.Sponsors.find(selection, Projection, function (err, SponsorList) {
             if (err) {
@@ -93,7 +92,7 @@ module.exports.getMethods = function (app) {
         };
         var Projection = {
             __v: false,
-            _id: true,
+            _id: false,
             adminPass:false
         };
         collectionModels.Administrator.find(selection, Projection, function (err, SponsorList) {
