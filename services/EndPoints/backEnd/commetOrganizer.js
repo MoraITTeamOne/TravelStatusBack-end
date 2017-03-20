@@ -26,8 +26,6 @@ module.exports.locationManager = function (app) {
             var trainId =req.body.transId;
             var RouteNo =req.body.RouteNo;
             console.log(req.body);
-
-
                     if(RouteNo ==='NO001'){
                         utills.logger('sucessfully accessed ' + req.url +'to Train Route 1', 200);
                         utills.DBConnection();
@@ -103,13 +101,7 @@ module.exports.locationManager = function (app) {
         } else {   //if the type is 'bus'
             var busId = req.body.transId;
             var busRoute;
-            request(config.BUS_SERVICE + '/get/bus/' + busId, function (err, response, body) {
-                if (!err && response.statusCode == 200) {
-                    var obj = JSON.parse(body);
-                    obj = obj.content;
-                    this.busRoute = obj.RouteNo;
-                    utills.logger("Succesfully retreved route number" + route, 200);
-                    //*********************************
+
                     if (busRoute == '1') {  //kandy
 
                         utills.logger('sucessfully accessed ' + req.url +'to Route 1', 200);
@@ -228,10 +220,8 @@ module.exports.locationManager = function (app) {
                     } else {
 
                     }
-                    //**************************************************
 
-                }
-            });
+
 
         }
 

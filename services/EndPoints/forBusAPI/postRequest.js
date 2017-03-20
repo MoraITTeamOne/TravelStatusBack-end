@@ -48,6 +48,7 @@ module.exports.postMethods = function (app) {
     app.post('/post/bus/driver', function (req, res) {
         utills.logger('successfully accessed ' + req.url, 200);
         console.log(req.body +" to be sent to the API");
+        console.log(req.body);
         request({
             url:config.BUS_SERVICE+'/post/driver',
             qs: {from:'Travel Status Back-End', time: +new Date()},
