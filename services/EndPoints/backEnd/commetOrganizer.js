@@ -16,7 +16,7 @@ module.exports.locationManager = function (app) {
 
 
     app.post('/post/loc', function (req, res) {
-        utlls.logger("Accesed to data base " + req.url, 200);
+        utills.logger("Accesed to data base " + req.url, 200);
         var type = req.body.type;
 
 
