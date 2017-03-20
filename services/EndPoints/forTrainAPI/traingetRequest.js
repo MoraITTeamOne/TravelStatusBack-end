@@ -141,7 +141,8 @@ module.exports.getMethods = function (app) {
             if (!err && response.statusCode == 200) {
                 var obj = JSON.parse(body);
                 obj = obj.content;
-                utills.sendResponce(200, res, err, obj);
+                res.status(200).send(obj);
+                //utills.sendResponce(200, res, err, obj);
             }
         })
 
