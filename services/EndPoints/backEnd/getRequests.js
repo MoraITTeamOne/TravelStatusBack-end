@@ -81,6 +81,33 @@ module.exports.getMethods = function (app) {
     });
 
 
+
+    /**
+     * this method will return a Admin details
+     */
+    app.get('/get/admin/:userName',function (req,res) {
+        utills.logger("successfuly accesed " + req.url, 200);
+        utills.DBConnection();
+        var selection ={
+            comName : req.params.userName
+        };
+        var Projection = {
+            __v: false,
+            _id: true,
+            adminPass:false
+        };
+        collectionModels.Administrator.find(selection, Projection, function (err, SponsorList) {
+            if (err) {
+                utills.logger("error occured :", 500, err);
+                utills.sendResponce(500,res,err);
+            } else {
+                utills.logger("succesfuly send the admin ", 200);
+                utills.sendResponce(200,res,'',SponsorList);
+            }
+        });
+    });
+
+
     /**
      * this method will return a specific user details
      */
