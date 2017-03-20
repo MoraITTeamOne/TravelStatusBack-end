@@ -192,7 +192,7 @@ module.exports.getMethods = function (app) {
         lastWeekDrivers:15,
         lastWeekConductors:15 ,
         lastWeekBuses:5,
-        time:new Date(),
+        time:new Date().toLocaleString(),
         topSponsors :'',
         topDriver :'',
         topConductor :'',
