@@ -239,7 +239,7 @@ module.exports.Authnication =function (app) {
                     email       :req.body.email,
                     telNo       :req.body.telNumber,
                     userName    :req.body.userName,
-                    password    :req.body.password,
+                    adminPass    :req.body.password,
                     proPic      :req.body.img,
                     regDate     :date
 

@@ -11,7 +11,6 @@ var Schema   =mongoose.Schema;
 //=====================================================
 
 var administrator = new Schema({
-    adminId        :{type:String,require:true,unique:true},
     name           :{
         fName:{type:String,require:true},
         lName:{type:String,require:true}
