@@ -100,7 +100,7 @@ module.exports.locationManager = function (app) {
 
         } else {   //if the type is 'bus'
             var busId = req.body.transId;
-            var busRoute;
+            var busRoute =req.body.RouteNo;
 
                     if (busRoute == '1') {  //kandy
 
