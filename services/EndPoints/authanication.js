@@ -294,6 +294,40 @@ module.exports.Authnication =function (app) {
     });
 
 
+    /***
+     * uppdate a sponsor
+     */
+
+    app.post('/update/sponsor',function (req,res) {
+        utills.logger('successfully acced authonication ',200);
+        utills.DBConnection();
+
+        var selection ={
+            comName :req.body.comName
+        };
+
+        var update ={
+            password :req.body.password
+        };
+
+        var options = {
+            new:true,
+            projection:{_id: false,__v:false,password:false},
+            maxTimeMS: 300
+        };
+
+        collectionModels.Sponsors.findOneAndUpdate(selection,update,options,function (err,list) {
+            if(err){
+                utills.logger("Document is not updated", 500, err);
+                utills.sendResponce(500,res,err);
+            }else {
+                utills.logger('Document is updated successfully', 200);
+                utills.sendResponce(200,res,err,list);
+            }
+        });
+    });
+
+
 
 
 };
