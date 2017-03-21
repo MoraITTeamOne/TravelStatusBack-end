@@ -132,6 +132,8 @@ var ranking = new Schema({
     route      :{type:String,require:true}
 
 
+
+
 });
 var Ranking = mongoose.model('rankings',ranking);
 exports.Ranking = Ranking;

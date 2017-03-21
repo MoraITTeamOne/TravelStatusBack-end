@@ -85,17 +85,19 @@ module.exports.postMethods = function (app) {
             latitude   :req.body.latitude,
             transpostType:req.body.type,
             transportId:req.body.transId,
-            transportName:req.body.tName,
-            rankType :req.body.ranakType,
-            rankValue:req.body.rank,
-            route      :req.body.routeNo
+            transportName:req.body.transName,
+            rankType     :req.body.ranakType,
+            rankValue    :req.body.rank,
+            route        :req.body.RouteNo
 
         });
         newRank.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
+                res.status(200).send({Message:'error',status:400});
             } else {
                 utills.logger(req.body.userName+ ' Document is saved successfully', 200);
+                res.status(200).send({Message:'success',status:200});
             }
         });
 
