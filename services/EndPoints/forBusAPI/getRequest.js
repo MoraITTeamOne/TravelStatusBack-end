@@ -173,12 +173,12 @@ module.exports.getMethods = function (app) {
     /**
      * this method will return scheduled buses after the requested time
      */
-    app.get('/get/posible/bus/:startLocation/:endLocation/:sTime',function (req,res) {
+    app.get('/get/possible/bus/:startLocation/:endLocation/:sTime',function (req,res) {
         utills.logger('successfully accessed ' + req.url, 200);
         var sLocation =   req.params.startLocation;
         var eLocation = req.params.endLocation;
         var sTime      = parseInt(req.params.sTime);
-        request(config.BUS_SERVICE+'/get/posible/bus'+sLocation+'/'+ eLocation +'/'+sTime, function (err, response, body) {
+        request(config.BUS_SERVICE+'/get/possible/bus/'+sLocation+'/'+ eLocation +'/'+sTime, function (err, response, body) {
             if (!err && response.statusCode == 200) {
                 var obj = JSON.parse(body);
                 obja = obj.content;
