@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b21c7f52-22c4-4938-8ece-9ba70e17397e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/backEnd/postRequests.js" afterPath="$PROJECT_DIR$/services/EndPoints/backEnd/postRequests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/authanication.js" afterPath="$PROJECT_DIR$/services/EndPoints/authanication.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="postRequests.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="postRequests.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/backEnd/postRequests.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authanication.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authanication.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="238" column="48" lean-forward="true" selection-start-line="238" selection-start-column="48" selection-end-line="238" selection-end-column="48" />
+            <state relative-caret-position="336">
+              <caret line="276" column="10" lean-forward="true" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app-config.json">
+      <file leaf-file-name="updateRequest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/updateRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="36">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -202,12 +202,12 @@
         <option value="$PROJECT_DIR$/services/EndPoints/forTrainAPI/traingetRequest.js" />
         <option value="$PROJECT_DIR$/app-config.json" />
         <option value="$PROJECT_DIR$/services/EndPoints/forBusAPI/postRequest.js" />
-        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/forBusAPI/getRequest.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/commetOrganizer.js" />
         <option value="$PROJECT_DIR$/dataModels/collectionModels.js" />
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/postRequests.js" />
+        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
       </list>
     </option>
   </component>
@@ -577,12 +577,12 @@
       <workItem from="1489995368656" duration="662000" />
       <workItem from="1489998257053" duration="9865000" />
       <workItem from="1490017536248" duration="3420000" />
-      <workItem from="1490036342580" duration="10693000" />
+      <workItem from="1490036342580" duration="11322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433113000" />
+    <option name="totallyTimeSpent" value="433742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/updateRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,14 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="238" column="48" lean-forward="true" selection-start-line="238" selection-start-column="48" selection-end-line="238" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/getRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40">
@@ -899,6 +884,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/EndPoints/forGameAPI/updateRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="276" column="10" lean-forward="true" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
           <folding />
         </state>
       </provider>
