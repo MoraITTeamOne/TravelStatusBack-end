@@ -32,8 +32,10 @@ module.exports.postMethods = function (app) {
         newAdverteistment.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
+                res.status(200).send({Message:'error',status:400});
             } else {
                 utills.logger('Document is saved successfully', 200);
+                res.status(200).send({Message:'success',status:200});
             }
         });
 
@@ -63,8 +65,10 @@ module.exports.postMethods = function (app) {
         newComment.save(function (err) {
             if (err) {
                 utills.logger("Document is not saved", 500, err);
+                res.status(200).send({Message:'error',status:400});
             } else {
                 utills.logger('Document is saved successfully', 200);
+                res.status(200).send({Message:'success',status:200});
             }
         });
 
