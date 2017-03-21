@@ -168,6 +168,28 @@ module.exports.getMethods = function (app) {
     });
 
 
+
+
+    /**
+     * this method will return scheduled buses after the requested time
+     */
+    app.get('/get/posible/bus/:startLocation/:endLocation/:sTime',function (req,res) {
+        utills.logger('successfully accessed ' + req.url, 200);
+        var sLocation =   req.params.startLocation;
+        var eLocation = req.params.endLocation;
+        var sTime      = parseInt(req.params.sTime);
+        request(config.BUS_SERVICE+'/get/posible/bus'+sLocation+'/'+ eLocation +'/'+sTime, function (err, response, body) {
+            if (!err && response.statusCode == 200) {
+                var obj = JSON.parse(body);
+                obja = obj.content;
+                utills.logger("Succesfully retreved data",200);
+                //utills.sendResponce(200,res,err,obj);
+                res.status(200).send(obja);
+            }
+        })
+
+    });
+
     app.get('/get/summary', function (req, res) {
         utills.logger("successfully accessed " + req.url, 200);
         request(config.BUS_SERVICE + '/get/summary', function (err, response, body) {
