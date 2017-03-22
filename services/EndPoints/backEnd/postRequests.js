@@ -52,14 +52,15 @@ module.exports.postMethods = function (app) {
         utills.DBConnection();
         var newComment = collectionModels.Comments ({
             userName   :req.body.userName,
-            texts      :req.body.message,
+            texts      :req.body.text,
             imag       :req.body.photo,
             date       :new Date().toLocaleString(),
             longitude  :req.body.longitude,
             latitude   :req.body.latitude,
             type       :req.body.type,
-            transportId:req.body.transportId,
-            route      :req.body.routeNumber
+            transportId:req.body.transId,
+            transPortName : req.body.transName,
+            route      :req.body.RouteNo
 
         });
         newComment.save(function (err) {
