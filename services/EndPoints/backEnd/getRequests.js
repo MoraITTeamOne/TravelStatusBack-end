@@ -343,4 +343,28 @@ module.exports.getMethods = function (app) {
         });
 
     });
+
+
+    app.get('/get/comment',function (req,res) {
+        var Projection = {
+            _id :false,
+            __v: false,
+            date       :Date,
+            longitude  :false,
+            latitude    :false,
+            type       :false,
+            transportId:false,
+            route      :false
+
+        };
+        collectionModels.Comments.find({}, Projection, function (err, addList) {
+            if (err) {
+                utills.logger("error occured :", 500, err);
+                utills.sendResponce(500,res,err);
+            } else {
+                utills.logger("succesfuly send the comment  list", 200);
+                utills.sendResponce(200,res,'',addList);
+            }
+        });
+    })
 };
