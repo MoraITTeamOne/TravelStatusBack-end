@@ -8,6 +8,8 @@ var path = require('path');
 var collectionModels = require('../../../dataModels/collectionModels');
 var config = require('../../../app-config.json');
 var request = require('request');
+var geocoding = new require('reverse-geocoding');
+var geocoder = require('geocoder');
 
 
 
@@ -27,6 +29,12 @@ module.exports.getMethods = function (app) {
         res.sendFile(path.join(__dirname, '../../views', 'index.html'));
         res.status(200);
         utills.logger("successfully send the index.html file", 200);
+
+
+
+
+
+
     });
 
 
@@ -78,6 +86,40 @@ module.exports.getMethods = function (app) {
             }
         });
     });
+
+
+
+
+
+    /**
+     * this method will return an addverteistment detaill by its Id
+     */
+    app.get('/get/loc',function (req,res) {
+        utills.logger("successfuly accesed test geocoading " + req.url, 200);
+
+
+        geocoder.reverseGeocode( 6.772775, 79.882933, function ( err, data ) {
+            if(err){
+                console.log(err);
+                res.status(400).send(err);
+            }else
+                console.log(data);
+                res.status(200).send(data);
+        });
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 

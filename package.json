@@ -13,6 +13,7 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "geocoder": "^0.2.3",
     "mongoose": "^4.7.5",
     "path": "^0.12.7",
     "request": "^2.79.0"
@@ -21,9 +22,3 @@
     "nodemon": "^1.11.0"
   }
 }
-
-
-
-
-
-
