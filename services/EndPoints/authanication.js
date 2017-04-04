@@ -8,12 +8,12 @@ var mongoose =require('mongoose');
 var collectionModels =require('../../dataModels/collectionModels');
 
 module.exports.Authnication =function (app) {
-    utills.logger('Ready to exicute Authanication services',200);
+    utills.logger('Ready to exicute Authanication111111 services',200);
 
 
     app.post('/login/user',function (req,res) {
         console.log(req.body);
-        utills.logger("Authanication mode access",200);
+        utills.logger("Authanication mode accesxxxxxxxs",200);
         var selction={
             userName:req.body.userName,
             password:req.body.password
