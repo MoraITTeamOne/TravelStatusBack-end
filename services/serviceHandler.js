@@ -18,6 +18,7 @@ var trainAPIGetRequest=require('./EndPoints/forTrainAPI/traingetRequest');
 
 var authanication = require('./EndPoints/authanication');
 var locationManager =require('./EndPoints/backEnd/commetOrganizer');
+var algo =require('./algorithams');
 
 
 
@@ -41,6 +42,10 @@ module.exports.services = function(app){
 
     authanication.Authnication(app);
     locationManager.locationManager(app);
+
+
+    algo.gettt(app);
+
 
 
 
