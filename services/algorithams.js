@@ -27,6 +27,8 @@ module.exports.gettt = function (app) {
 
     app.post('/get/result', function (req, res) {
         console.log(req.url);
+        console.log(req.body);
+        console.log(train);
         res.send(train);
     });
 
