@@ -30,7 +30,7 @@ module.exports.Authnication =function (app) {
                 res.status(200).send({status:400,Message:"Not Found"});
             }else if(data.length == 1){
                 utills.logger("exist the user "+req.body.userName, 200, err);
-                res.status(200).send({status:200,Message:"success"});
+                res.status(200).send({status:200,Message:"success",level:"1",score:100});
             }else {
                 utills.logger("Some error occure  "+req.body.userName, 304, err);
                 res.status(200).send({status:500,Message:"Internal error"});

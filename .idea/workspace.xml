@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21c7f52-22c4-4938-8ece-9ba70e17397e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/002-cloudy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/003-electric-car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/004-iceberg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/005-mill.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/006-spruce.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/007-island.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/008-river.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/009-waterfall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/010-mountains.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/011-sea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/012-farm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/013-nuclear-plant.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/014-road.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/015-car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/016-valley.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/017-forest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/018-sprout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/png/019-cape.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/EndPoints/authanication.js" afterPath="$PROJECT_DIR$/services/EndPoints/authanication.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,21 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getRequests.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="algorithams.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/algorithams.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -48,37 +57,27 @@
         <entry file="file://$PROJECT_DIR$/app-config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serviceHandler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/serviceHandler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authanication.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authanication.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5880">
-              <caret line="294" column="0" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="294" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="32" column="89" lean-forward="true" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -199,11 +198,11 @@
         <option value="$PROJECT_DIR$/dataModels/locationSaver.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/services/EndPoints/backEnd/getRequests.js" />
-        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
         <option value="$PROJECT_DIR$/services/serviceHandler.js" />
         <option value="$PROJECT_DIR$/app-config.json" />
         <option value="$PROJECT_DIR$/services/algorithams.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/services/EndPoints/authanication.js" />
       </list>
     </option>
   </component>
@@ -243,7 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,9 +269,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TravelStatusBackEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TravelStatusBackEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EndPoints" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,6 +307,9 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chanaka_Fernando\Documents\Second_Year_Project\TravelStatusBackEnd" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Chanaka_Fernando\Documents\Second_Year_Project\TravelStatusBackEnd\services\EndPoints\backEnd" />
       <recent name="C:\Users\Chanaka_Fernando\Documents\Second_Year_Project\TravelStatusBackEnd\services\EndPoints" />
@@ -475,12 +495,13 @@
       <workItem from="1492351507802" duration="3453000" />
       <workItem from="1492482331782" duration="394000" />
       <workItem from="1492674892280" duration="1255000" />
-      <workItem from="1493641253011" duration="1533000" />
+      <workItem from="1493641253011" duration="3725000" />
+      <workItem from="1494140365809" duration="1292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="476230000" />
+    <option name="totallyTimeSpent" value="479714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,20 +572,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app-config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -716,14 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5880">
-          <caret line="294" column="0" lean-forward="false" selection-start-line="266" selection-start-column="4" selection-end-line="294" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/EndPoints/forTrainAPI/traingetRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2420">
@@ -750,8 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/algorithams.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -767,15 +766,33 @@
     <entry file="file://$PROJECT_DIR$/app-config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/png/007-island.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/png/006-spruce.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/EndPoints/authanication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="32" column="89" lean-forward="true" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="89" />
           <folding />
         </state>
       </provider>
